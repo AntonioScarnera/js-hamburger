@@ -4,9 +4,15 @@ console.log(burgerOpen);
 let burgerMenu = document.querySelector('.hamburger-menu');
 console.log(burgerMenu);
 
-burgerOpen.addEventListener("cilck", myFunction);
+let burgerCloser = document.querySelector('.close');
+console.log(burgerCloser);
 
-function myFunction(){
-    //document.querySelector('.hamburger-menu').classList.add(".active");
-    console.log('prova');
-}
+burgerOpen.addEventListener('click', function(){
+    document.querySelector('.hamburger-menu').classList.add("active");
+});
+
+burgerCloser.addEventListener('click', function(){
+    document.querySelector('.hamburger-menu').classList.remove("active");
+});
+
+
